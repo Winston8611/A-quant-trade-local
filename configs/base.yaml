@@ -1,0 +1,16 @@
+# 基础配置模板：提供全局默认值（可按需在运行配置中覆盖）
+market: CN_A_SHARE
+# 当前项目以日频策略为主
+frequency: daily
+# 初始资金（单位：元）
+cash: 1000000
+costs:
+  # 佣金比例（万分之三）
+  commission_rate: 0.0003
+  # 印花税（仅卖出收取）
+  stamp_tax_rate: 0.001
+risk:
+  # 单只股票最大仓位
+  max_pos: 0.2
+  # 总仓位上限（1.0 表示 100%）
+  gross_limit: 1.0

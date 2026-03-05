@@ -1,0 +1,11 @@
+pandas>=2.2.0
+numpy>=1.26.0
+duckdb>=1.1.0
+pyarrow>=17.0.0
+pydantic>=2.8.0
+pyyaml>=6.0.1
+akshare>=1.14.0
+baostock>=0.8.9
+
+[dev]
+pytest>=8.3.0

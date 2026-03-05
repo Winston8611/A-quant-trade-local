@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: quant-local
+Version: 0.1.0
+Summary: Local A-share daily quant system for backtest and paper trading
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: numpy>=1.26.0
+Requires-Dist: duckdb>=1.1.0
+Requires-Dist: pyarrow>=17.0.0
+Requires-Dist: pydantic>=2.8.0
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: akshare>=1.14.0
+Requires-Dist: baostock>=0.8.9
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3.0; extra == "dev"
+
+# Local A-Share Quant
+
+Free and local quant research/trading framework for A-share daily strategy backtest and paper trading.
+
+## Quick Start
+
+1. Install dependencies:
+   - `pip install -e .[dev]`
+2. Initialize sample data:
+   - `python scripts/init_data.py`
+3. Run tests:
+   - `pytest -q`
+4. Run backtest:
+   - `python -m engine.runner.run_backtest --config configs/backtest.yaml`
+5. Run paper trade:
+   - `python -m engine.runner.run_paper_trade --config configs/paper_trade.yaml`

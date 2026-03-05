@@ -1,0 +1,14 @@
+# 均线策略模板
+strategy:
+  # 策略名称（会在策略注册表中匹配）
+  name: ma_cross
+  params:
+    # 短均线窗口
+    short_window: 5
+    # 长均线窗口
+    long_window: 20
+portfolio:
+  # 单票仓位上限
+  max_pos: 0.2
+  # 总仓位上限
+  gross_limit: 1.0

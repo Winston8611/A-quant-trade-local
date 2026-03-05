@@ -1,0 +1,14 @@
+# 回测运行配置
+market: CN_A_SHARE
+mode: backtest
+date_range:
+  # 回测时间区间
+  start: "2020-01-01"
+  end: "2025-12-31"
+# 独立策略配置文件：改策略优先改这个文件
+strategy_config: configs/strategies/ma_cross.yaml
+data:
+  # 本地 DuckDB 文件路径
+  db_path: data/db/market.duckdb
+  # 回测标的列表
+  symbols: ["000001.SZ"]

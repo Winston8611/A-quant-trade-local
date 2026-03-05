@@ -1,0 +1,12 @@
+# 动量策略模板
+strategy:
+  # 策略名称（会在策略注册表中匹配）
+  name: momentum
+  params:
+    # 动量回看窗口（交易日）
+    lookback: 10
+portfolio:
+  # 单票仓位上限
+  max_pos: 0.2
+  # 总仓位上限
+  gross_limit: 1.0

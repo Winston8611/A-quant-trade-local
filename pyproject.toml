@@ -1,0 +1,31 @@
+[project]
+name = "quant-local"
+version = "0.1.0"
+description = "Local A-share daily quant system for backtest and paper trading"
+readme = "README.md"
+# 项目最低 Python 版本
+requires-python = ">=3.10"
+dependencies = [
+  # 数据处理
+  "pandas>=2.2.0",
+  "numpy>=1.26.0",
+  # 本地数据库与列式存储
+  "duckdb>=1.1.0",
+  "pyarrow>=17.0.0",
+  # 配置和数据校验
+  "pydantic>=2.8.0",
+  "pyyaml>=6.0.1",
+  # 免费行情数据源
+  "akshare>=1.14.0",
+  "baostock>=0.8.9",
+]
+
+[project.optional-dependencies]
+dev = [
+  # 测试框架
+  "pytest>=8.3.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
