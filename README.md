@@ -107,7 +107,7 @@ python -m engine.runner.run_paper_trade --config configs/paper_trade.yaml
 - `configs/backtest.yaml` 的 `strategy_config`
 - `configs/paper_trade.yaml` 的 `strategy_config`
 
-这样你后续更新项目时，策略逻辑与运行配置是解耦的，维护成本更低。
+这样后续更新项目时，策略逻辑与运行配置是解耦的，维护成本更低。
 
 ---
 
