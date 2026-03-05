@@ -97,7 +97,7 @@ python -m engine.runner.run_paper_trade --config configs/paper_trade.yaml
 
 ## 5. 如何改策略？
 
-只需要改一个地方：`configs/strategies/*.yaml`
+策略逻辑与运行配置是解耦的，只需要改一个地方：`configs/strategies/*.yaml`
 
 例如：
 - `configs/strategies/ma_cross.yaml`（均线策略）
@@ -106,9 +106,7 @@ python -m engine.runner.run_paper_trade --config configs/paper_trade.yaml
 再在运行配置里切换：
 - `configs/backtest.yaml` 的 `strategy_config`
 - `configs/paper_trade.yaml` 的 `strategy_config`
-
-这样后续更新项目时，策略逻辑与运行配置是解耦的，维护成本更低。
-
+  
 ---
 
 ## 6. 已内置策略模板
