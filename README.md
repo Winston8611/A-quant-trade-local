@@ -95,9 +95,9 @@ python -m engine.runner.run_paper_trade --config configs/paper_trade.yaml
 
 ---
 
-## 5. 新手最关心：如何改策略？
+## 5. 如何改策略？
 
-你现在只需要改一个地方：`configs/strategies/*.yaml`
+只需要改一个地方：`configs/strategies/*.yaml`
 
 例如：
 - `configs/strategies/ma_cross.yaml`（均线策略）
